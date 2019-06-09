@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head lang = "ru">
+	<meta charset="utf-8">
+	<!-- Подключаю стили страницы -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Подключаю библиотеку jQuery -->
+	<script src="jquery-3.3.1.min.js"></script>
+	<!-- Подключаю скрипт управления меню -->
+	<script src="menu.js"></script>
+	<title>Тестовое задание</title>
+</head>
+<body>
+	<!-- Создаю основной контейнер для содержимого страницы -->
+    <div class = "contaner">
+    	<!-- Контейнер каталога -->
+    	<div class = "catalog"><h1>Каталог</h1>
+    		<!-- Контейнер с элементами каталога -->
+    	  <div class = catalog_items>	
+    		<div class = catalog_item>
+    			<img src="img/catalog_item.png" alt="Картинка не найдена">
+    			<p>СМИ сообщают, что в Индии был замечен новый 
+    			внедорожник Chevrolet Trailblazer</p>
+    		</div>
+
+    		<div class = catalog_item>
+    			<img src="img/catalog_item.png" alt="Картинка не найдена">
+    			<p>Официальные дилеры немецкого автоконцерна
+    			"Audi" в России начали прием заказов на 5-местный
+    		хетчбэк RS 3 Sportback</p>
+    		</div>
+
+    		<div class = catalog_item>
+    			<img src="img/catalog_item.png" alt="Картинка не найдена">
+    			<p>Datsun наращивает продажи в России</p>
+    		</div>
+
+    		<div class = catalog_item>
+    			<img src="img/catalog_item.png" alt="Картинка не найдена">
+    			<p>В России может появиться дизельный Hyundai ix25</p>
+    		</div>
+
+    		<div class = catalog_item>
+    			<img src="img/catalog_item.png" alt="Картинка не найдена">
+    			<p>Lamborghini не хочет выпускать бюджетный спорткар
+    			за 200 000 долларов</p>
+    		  </div>
+           </div>
+    	</div>
+    	<!-- Контейнер меню -->
+    	<div class = "menu"><h1>Меню</h1>
+    		<!-- Контейнер с элементами меню -->
+    		<div class = "menu_contaner">
+    			<div class = "menu_item">Главная</div>
+    			<div class = "menu_item">Каталог
+    				<!-- Вложенный эелемент пункта меню -->
+                     <div class = "catalog_props_contaner">
+                     	           <img src="img/menu_catalog.png">
+                       <div class = catalog_props>
+                       	<div class = catalog_props_column_1>
+                     	   <div class = "catalog_prop"><p>ТВ и Видео</p></div>
+                     	   <div class = "catalog_prop"><p>Компьютерная техника</p></div>
+                     	   <div class = "catalog_prop"><p>Фото и видео техника</p></div>
+                     	   <div class = "catalog_prop"><p>Телефоны</p></div>
+                     	   <div class = "catalog_prop"><p>Портативная техника</p></div>
+                     	   <div class = "catalog_prop"><p>Аудиотехника</p></div>
+                     	 </div>  
+                     	 <div class = catalog_props_column_2>  
+                     	   <div class = "catalog_prop"><p>Автотехника</p></div>
+                     	   <div class = "catalog_prop"><p>Техника для дома</p></div>
+                     	   <div class = "catalog_prop"><p>Техника для кухни</p></div>
+                     	   <div class = "catalog_prop"><p>Встраниваемая техника</p></div>
+                     	   <div class = "catalog_prop"><p>Красота и здоровье</p></div>
+                     	   <div class = "catalog_prop"><p>Игры и приставки</p></div>
+                     	 </div> 
+                      </div>
+                   </div>
+    			</div>
+    			<div class = "menu_item">О компании</div>
+    			<div class = "menu_item">Контакты</div>
+    		</div>
+    	</div>
+    	<!-- Контейнер формы -->
+    	<div class ="form"><h1>Форма</h1>
+    		<!-- Форма -->
+    		<form>
+    			<!-- Выпадающий список -->
+    			<select>
+    				<option>&nbsp;&nbsp;Ваш пол</option>
+    				<option>&nbsp;&nbsp;Мужской</option>
+    				<option>&nbsp;&nbsp;Женский</option>
+    				<option>&nbsp;&nbsp;Другой</option>
+    			</select>
+    			<!-- Радио -->
+    		   <div class = "radio_contaner">
+    			<input class = "radio" type="radio" name="round_radio">
+    			<input class = "radio" type="radio" name="round_radio">
+    			<input class = "radio" type="radio" name="round_radio">
+               </div>
+               <!-- Чекбокс -->
+              <div class="checkbox_contaner">
+                     <input type="checkbox" class = "checkbox">
+                     <input type="checkbox" class = "checkbox">
+                     <input type="checkbox" class = "checkbox">
+                     <p>Отметьте что-нибудь</p>
+
+              </div>
+              <!-- Кнопка отправки формы -->
+              <input type="submit" class = "submit" value = "Кнопка"> 
+    		</form>
+    	</div>
+    	<!-- Контейнер слайдера -->
+    	<div class = "slider"><h1>Слайдер</h1>
+    	 <div class = "all"	>
+    	 	<!-- Элементы , необходимые для корректной работы -->
+    		<input checked type="radio" name="respond" id = "desktop">
+    		   <article id = "slider">
+    		   	  <input checked type="radio" name="slider" id = "switch_1">
+    		   	  <input  type="radio" name="slider" id = "switch_2">
+    		   	  <input  type="radio" name="slider" id = "switch_3">
+    		   	  <input  type="radio" name="slider" id = "switch_4">
+    		   	  <input  type="radio" name="slider" id = "switch_5">
+                 <!--  Слайды -->
+    		   	  <div id = "slides">
+    		   	  	<div id="overflow">
+    		   	  		<div class = "img">
+    		   	  			<article><img src = "img/slide_1.png">
+    		   	  				<!-- Вложенные элементы на слайде -->
+    		   	  				<div class = "slider_news">
+    		   	  					<div class = "slider_news_item">В Индии был замечен новый Chevrolet Trailblazer </div>
+    		   	  					<div class = "slider_news_item">
+    		   	  						Datsun наращивает продажи в России
+    		   	  					</div>
+    		   	  					<div class = "slider_news_item">
+    		   	  						Ford Kuga ожидает премиальная модификация Vignale
+    		   	  					</div>
+    		   	  					<div class = "slider_news_item">
+    		   	  						Обьем продаж Audi по всему миру вырос на 6%
+    		   	  					</div>
+    		   	  				</div>
+    		   	  			</article>
+    		   	  			<article><img src = "img/slide_1.png"></article>
+    		   	  			<article><img src = "img/slide_1.png"></article>
+    		   	  			<article><img src = "img/slide_1.png"></article>
+    		   	  			<article><img src = "img/slide_1.png"></article>
+    		   	  		</div>
+    		   	  	</div>
+    		   	  </div>
+                  <!-- Элементы контроля перелистывания -->
+    		   	  <div id = "controls">
+    		   	  	<label for = "switch_1"></label>
+    		   	  	<label for = "switch_2"></label>
+    		   	  	<label for = "switch_3"></label>
+    		   	  	<label for = "switch_4"></label>
+    		   	  	<label for = "switch_5"></label>
+    		   	  </div>
+                   <!-- Элементы контроля перелистывания -->
+    		   	  <div id = "active">
+    		   	  	<label for = "switch_1"></label>
+    		   	  	<label for = "switch_2"></label>
+    		   	  	<label for = "switch_3"></label>
+    		   	  	<label for = "switch_4"></label>
+    		   	  	<label for = "switch_5"></label>
+    		   	  </div>
+    		   </article>
+    	</div>
+    </div>
+  </div> 
+</body>
+</html>
